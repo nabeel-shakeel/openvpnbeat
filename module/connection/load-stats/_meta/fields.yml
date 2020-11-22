@@ -1,0 +1,10 @@
+- name: load-stats
+  type: group
+  release: beta
+  description: >
+    load-stats
+  fields:
+    - name: example
+      type: keyword
+      description: >
+        Example field

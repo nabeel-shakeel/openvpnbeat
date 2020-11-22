@@ -1,0 +1,10 @@
+- key: connection
+  title: "connection"
+  release: beta
+  description: >
+    connection module
+  fields:
+    - name: connection
+      type: group
+      description: >
+      fields:

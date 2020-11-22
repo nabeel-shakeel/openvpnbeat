@@ -1,0 +1,9 @@
+# Module: connection
+# Docs: https://www.elastic.co/guide/en/beats/openvpnbeat/master/openvpnbeat-module-connection.html
+
+- module: connection
+  metricsets: ["load-stats"]
+  enabled: false
+  period: 10s
+  hosts: ["localhost"]
+
