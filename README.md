@@ -13,7 +13,7 @@ ports: ["7505"]
 
 ### Output
 Generated Output
-![Output](event.png)
+![Output](images/event.png)
 
 ## Getting started
 
