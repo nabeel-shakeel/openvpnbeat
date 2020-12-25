@@ -21,5 +21,5 @@ package include
 
 import (
 	// Import packages that need to register themselves.
-	_ "github.com/nabeel-shakeel/openvpnbeat/module/connection/load-stats"
+	_ "github.com/nabeel-shakeel/openvpnbeat/module/connection/load_stats"
 )

@@ -1,2 +1,6 @@
 # Directories
 build
+logs
+
+# Binary
+openvpnbeat

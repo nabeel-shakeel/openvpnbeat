@@ -1,6 +1,6 @@
 - module: connection
-  metricsets: ["load-stats"]
-  enabled: false
-  period: 10s
-  hosts: ["localhost"]
-
+  metricsets: ["load_stats"]
+  enabled: true
+  period: 60s
+  # specify openvpn management interface ports
+  ports: ["7505"]

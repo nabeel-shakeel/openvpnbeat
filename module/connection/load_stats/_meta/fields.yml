@@ -1,0 +1,27 @@
+- name: load_stats
+  type: group
+  release: beta
+  description: >
+    load_stats contains metric, like nclinets, bytesin, bytesout
+  fields:
+    - name: port
+      type: long
+      description: >
+        Port on which management interface connect
+
+    - name: clients
+      type: long
+      description: >
+         Number of clients
+
+    - name: bytesin
+      type: long
+      format: bytes
+      description: >
+         Number of bytesin
+
+    - name: bytesout
+      type: long
+      format: bytes
+      description: >
+         Number of bytes out

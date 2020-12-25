@@ -7,12 +7,15 @@
     "metricset":{
         "host":"localhost",
         "module":"connection",
-        "name":"load-stats",
+        "name":"load_stats",
         "rtt":44269
     },
     "connection":{
-        "load-stats":{
-            "example": "load-stats"
+        "load_stats":{
+          "port": 7505,
+          "clients": 0,
+          "bytesin": 0,
+          "bytesout": 0
         }
     },
     "type":"metricsets"
