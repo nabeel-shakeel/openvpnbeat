@@ -1,23 +1,44 @@
 # openvpnbeat
 
-openvpnbeat is a beat based on metricbeat which was generated with metricbeat/metricset generator.
+Openvpnbeat is a light weight data shipper for Openvpn metrics. It is based on metricbeat structure.
+
+This beat provides metric collection of Openvpn `load-stats` metrics. Also you need to do is to add ports of OpenVPN management interface in config
+
+### Configuration
+Set the configuration options from modules.d/connection.yml.
+```bash
+# specify management interface ports
+ports: ["7505"]
+```
+
+### Output
+Generated Output
 
 
 ## Getting started
 
-To get started run the following command. This command should only be run once.
+### Requirements
 
-```
-make setup
+Follow this [link](https://www.elastic.co/guide/en/beats/devguide/current/creating-beat-from-metricbeat.html) to complete requirements
+
+### Build
+
+To compile your beat run `mage build`
+
+### Enable Module
+
+Run this command to enable `connection` module
+```bash
+./openvpnbeat modules enable connection
 ```
 
-It will ask you for the module and metricset name. Insert the name accordingly.
+### Run
 
-To compile your beat run `make`. Then you can run the following command to see the first output:
-
+To run openvpnbeat with debugging output enabled, run:
 ```
-openvpnbeat -e -d "*"
+./openvpnbeat -e -d "*"
 ```
+### Add Metricset
 
 In case further modules are metricsets should be added, run:
 
@@ -28,7 +49,7 @@ make create-metricset
 After updates to the fields or config files, always run
 
 ```
-make collect
+mage update
 ```
 
 This updates all fields and docs with the most recent changes.
